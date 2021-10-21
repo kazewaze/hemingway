@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 0.1em 0.05em 0px 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 35px;
+  border-top: .7px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.title {
+  margin: 75px 0 0 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description,
+.datetime,
+.contentBody,
+.contentBodyFirst,
+.hemingway,
+.mice {
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.datetime {
+  color: #111111;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.contentBody__Container {
+  padding: 0.1em 0.05em 0px 0px;
+  margin: 0 3rem;
+}
+
+.contentBody, .contentBodyFirst, .hemingway, .mice {
+  width: 100%;
+  max-width: 1000px;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-feature-settings: normal;
+  letter-spacing: normal;
+  line-height: 1.7em;
+  line-break: auto;
+  overflow-wrap: normal;
+  padding: 0.1em 0.05em 0px 0px;
+  text-align: left;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contentBodyFirst::first-letter {
+  -webkit-initial-letter: 3;
+          initial-letter: 3;
+  color: #000000;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 7px;
+}
+
+.hemingway, .mice {
+  font-weight: bold;
+}
+
+.hemingway {
+  color: #ae4a3b;
+  text-decoration: underline;
+}
+
+.mice {
+  /* color: #8380AB; */
+  color: #3E94A3;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+.nav {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 55px;
+  font-family: 'Cinzel', 'Times New Roman', Times, serif;
+  font-weight: 700;
+  letter-spacing: 3.3px;
+}
+
+@media (max-width: 650px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  .datetime {
+    font-size: .85rem;
+  }
+
+  .contentBodyFirst::first-letter {
+    font-size: 2.5rem;
+  }
+}
