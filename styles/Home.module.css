@@ -46,7 +46,7 @@
 .contentBodyFirst,
 .hemingway,
 .mice {
-  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-family: 'Averia Serif Libre', 'Times New Roman', Times, serif;
   text-align: center;
 }
 
@@ -86,7 +86,7 @@
   -webkit-initial-letter: 3;
           initial-letter: 3;
   color: #000000;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin: 7px;
 }
