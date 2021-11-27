@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -8,10 +8,27 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  line-height: 1.5;
   scroll-behavior: smooth;
+  text-transform: none;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
   font-family: 'Averia Serif Libre', 'Times New Roman', Times, Helvetica Neue, sans-serif, serif;
   color: #111111;
   background-color: #fbfde0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
 a {
@@ -29,4 +46,8 @@ blockquote {
   letter-spacing: .7px;
   color: #ffffff;
   background-color: #111111;
+}
+
+#root, #__next {
+  isolation: isolate;
 }

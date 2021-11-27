@@ -83,8 +83,8 @@
 }
 
 .contentBodyFirst::first-letter {
-  -webkit-initial-letter: 3;
-          initial-letter: 3;
+  -webkit-initial-letter: 2;
+          initial-letter: 2;
   color: #000000;
   font-family: 'Averia Serif Libre', 'Times New Roman', Times, serif;
   font-size: 3rem;
@@ -118,13 +118,6 @@
   background-color: #111111;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
 .heading {
   color: #ffffff;
   font-size: 55px;
@@ -133,13 +126,11 @@
   letter-spacing: 3.3px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .heading {
     font-size: 40px;
   }
-}
 
-@media (max-width: 530px) {
   .title {
     font-size: 2.5rem;
   }
